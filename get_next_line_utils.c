@@ -6,18 +6,18 @@
 /*   By: amagno-r <amagno-r@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 15:28:33 by amagno-r          #+#    #+#             */
-/*   Updated: 2025/05/06 23:01:09 by amagno-r         ###   ########.fr       */
+/*   Updated: 2025/05/06 23:13:32 by amagno-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-size_t  ft_newlen(const char *str)
+size_t	ft_newlen(const char *str)
 {
-    char	*start;
+	char	*start;
 
 	start = (char *)str;
-	if(!str)
+	if (!str)
 		return (0);
 	while (*str && *str != '\n')
 		str++;
